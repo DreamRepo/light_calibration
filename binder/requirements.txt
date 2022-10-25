@@ -1,0 +1,10 @@
+ipywidgets
+nbinteract
+git+git://github.com/Alienor134/alienlab
+scikit-image
+imageio
+numpy
+matplotlib
+jupyter_contrib_nbextensions
+tqdm
+ipympl
