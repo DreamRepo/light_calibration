@@ -73,7 +73,7 @@ def plot_map(I_000, I_000_map, save_name, limits = (0,0)):
     #crop the outliers for correct scaling of the colormap
     if limits==(0,0):
         Q1 = np.quantile(I_000, 0.01)
-        Q3 = np.quantile(I_000, 0.95)
+        Q3 = np.quantile(I_000, 0.995)
     else: 
         Q1 = limits[0]
         Q3 = limits[1]
