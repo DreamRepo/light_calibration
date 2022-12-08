@@ -78,7 +78,7 @@ app.layout = html.Div([
                 dcc.Graph(id="trace", hoverData={'points': [{'hovertext': "0_0_0/3/1"}]}),
 
         ],
-        style={'width': '49%', 'display': 'inline-block'}),
+        style={'width' : '100%', 'display': 'flex', 'flex-direction': 'row'}),
 ]
 )
 

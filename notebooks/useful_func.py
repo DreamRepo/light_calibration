@@ -112,25 +112,27 @@ def plot_map(I_000, I_000_map, save_name, limits = (0,0)):
 
 
 def threshold_convert(filter_type):
-    if filter_type == "skimage.filters.thresholding.threshold_isodata":
+    if filter_type == "isodata":
         filt = skimage.filters.thresholding.threshold_isodata
         
-    if filter_type == "skimage.filters.thresholding.threshold_li":
+    if filter_type == "li":
         filt = skimage.filters.thresholding.threshold_li
 
-    if filter_type == "skimage.filters.thresholding.threshold_mean":
+    if filter_type == "mean":
         filt = skimage.filters.thresholding.threshold_mean
         
-    if filter_type == "skimage.filters.thresholding.threshold_minimum":
+    if filter_type == "minimum":
         filt = skimage.filters.thresholding.threshold_minimum
         
-    if filter_type == "skimage.filters.thresholding.threshold_otsu":
+    if filter_type == "otsu":
         filt = skimage.filters.thresholding.threshold_otsu
-    if filter_type == "skimage.filters.thresholding.threshold_triangle":
+    if filter_type == "triangle":
         filt = skimage.filters.thresholding.threshold_triangle
-    if filter_type == "skimage.filters.thresholding.threshold_yen":
+    if filter_type == "yen":
         filt = skimage.filters.thresholding.threshold_yen
     if filter_type == "None":
+        filt = lambda x:0
+    if filter_type == "none":
         filt = lambda x:0
         
     return filt
