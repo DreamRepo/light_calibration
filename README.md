@@ -6,14 +6,14 @@ The manuscript XXX(to complete) describes methods to calibrate the intensity of 
 
 
 <p align="center">
-<a> <img src="images/cover.png" width="700"></a>
+<a> <img src="images/readme/cover.png" width="700"></a>
 </p>
 
 
- This repository contains an example code that can be run online to analyze a calibration video using Dronpa-2. The code inputs the video and performs a pixel-per-pixel fit of a monoexponential. It maps a time constant associated to the time evolution of the fluorescence for each pixel in the image. The kinetic parameter $\sigma_{\lambda}$ allows to convert the time-constant map into an intensity map using the equation: $I(x,y) = \frac{1}{\sigma \tau(x,y)}$.  
+ This repository contains an example code that can be run online to analyze a calibration video using Dronpa-2. The code inputs the video and performs a pixel-per-pixel fit of a monoexponential. It maps a time constant associated to the time evolution of the fluorescence to each pixel in the image. The kinetic parameter $\sigma_{\lambda}$ allows to convert the time-constant map into an intensity map using the equation: $I(x,y) = \frac{1}{\sigma_{\lambda} \tau(x,y)}$.  
 
 <p align="center">
-<a> <img src="images/scheme.png" width="700"></a>
+<a> <img src="images/readme/scheme.png" width="700"></a>
 </p>
 
 
