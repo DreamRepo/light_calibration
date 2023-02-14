@@ -6,7 +6,7 @@ The manuscript XXX(to complete) describes methods to calibrate the intensity of 
 
 
 <p align="center">
-<a> <img src="images/readme/cover.png" width="700"></a>
+<a> <img src="images/readme/image_mouette.png" width="700"></a>
 </p>
 
 
