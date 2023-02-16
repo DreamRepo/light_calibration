@@ -1,6 +1,13 @@
 # Fluorescence to measure light intensity
 
+This repository contains supplementary files and codes to complete the manuscript XXX:
+- Online implementation of the code used to produce Figure 2 [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/Dronpa2_video.ipynb)
+- Simulations of the illumination used in Figure 2k,l [here](https://github.com/DreamRepo/light_calibration/tree/main/Macroscope)
+- Simulation of 3D illumination pattern and comparison with 2D imaging [here](https://github.com/DreamRepo/light_calibration/tree/main/LED%20Array)
+- Absorption and emission spectra of the actinometers [here](https://github.com/DreamRepo/light_calibration/tree/main/spectra_plotly)
+- Implementation of the fitting algorithm for the fluorescence induction of microalgae [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/PA_OJIP_rise_fit.ipynb)
 
+The following section explains how to use the online implementation. 
 ## Summary
 The manuscript XXX(to complete) describes methods to calibrate the intensity of a light source using various actinometers, and describe how to implement the protocols.
 
@@ -10,7 +17,7 @@ The manuscript XXX(to complete) describes methods to calibrate the intensity of 
 </p>
 
 
- This repository contains an example code that can be run online to analyze a calibration video using Dronpa-2. The code inputs the video and performs a pixel-per-pixel fit of a monoexponential. It maps a time constant associated to the time evolution of the fluorescence to each pixel in the image. The kinetic parameter $\sigma_{\lambda}$ allows to convert the time-constant map into an intensity map using the equation: $I(x,y) = \frac{1}{\sigma_{\lambda} \tau(x,y)}$.  
+ This repository contains an example code that can be run online to analyze a calibration video using Dronpa-2. The code inputs the video and performs a pixel-per-pixel fit of a monoexponential. It maps a time constant associated to the time evolution of the fluorescence to each pixel in the image. The kinetic parameter $\sigma_{\lambda}$ allows to convert the time-constant map into an intensity map. As described in the supplementary information, we use the equation taking into account the thermal relaxation which intervenes when the light intensity is low: $I(x,y) = \frac{1-k^\Delta \tau}{\sigma_{\lambda} \tau(x,y)}$.  
 
 <p align="center">
 <a> <img src="images/readme/scheme.png" width="700"></a>
