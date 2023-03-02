@@ -6,6 +6,7 @@ This repository contains supplementary files and codes to complete the manuscrip
 - Simulation of 3D illumination pattern and comparison with 2D imaging [here](https://github.com/DreamRepo/light_calibration/tree/main/LED%20Array)
 - Absorption and emission spectra of the actinometers [here](https://github.com/DreamRepo/light_calibration/tree/main/spectra_plotly)
 - Implementation of the fitting algorithm for the fluorescence induction of microalgae [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/PA_OJIP_rise_fit.ipynb)
+- Metadata for the video acquisitions used to produce the main text figures [here](https://github.com/DreamRepo/light_calibration/tree/main/imaging_metadata)
 
 The following section explains how to use the online implementation. 
 ## Summary
