@@ -41,7 +41,7 @@ The repository also contains an app to visualize the time-evolution pixel-per-pi
 
 You can clone the repository to use the codes locally or launch it online with Binder. 
 
-To launch Binder: click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Alienor134/light_calibration/HEAD)
+To launch Binder: click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DreamRepo/light_calibration/HEAD)
 
 To install locally: 
 The requirement.txt file is in the Binder folder.
