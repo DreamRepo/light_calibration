@@ -44,7 +44,7 @@ The repository also contains an app to visualize the time-evolution pixel-per-pi
 
 You can clone the repository to use the codes locally or launch it online with Binder. 
 
-To launch Binder: click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DreamRepo/light_calibration/HEAD?urlpath=https%3A%2F%2Fgithub.com%2FDreamRepo%2Flight_calibration%2Fblob%2Fmain%2Fnotebooks%2FDronpa2_video.ipynb) (**Note**: the launching takes a few minutes and the session expires if unused)
+To launch Binder: click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DreamRepo/light_calibration/HEAD?labpath=notebooks%2FDronpa2_video.ipynb) (**Note**: the launching takes a few minutes and the session expires if unused)
 
 To install locally: 
 The requirement.txt file specifying the required packages and their versions is in the Binder folder. Python version 3.8.3, Conda version 22.11.1. The code has been tested on two Windows 10 installations. 
