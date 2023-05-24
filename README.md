@@ -13,7 +13,7 @@ This repository contains supplementary files and codes to complete the manuscrip
 ## Codes associated to experimental protocols: 
 - Application to process a fluorescence evolution curve [here](https://github.com/DreamRepo/light_calibration/tree/main/app)
 - Wavelength transfer using DDAO [here](https://github.com/DreamRepo/light_calibration/tree/main/DDAO)
-- **Online implementation of the code used to produce Figure 2** jupyter notebook [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/Dronpa2_video.ipynb) or follow the next paragraph to use the online implementation.
+- Light intensity in the field of view (Figure 2): jupyter notebook [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/Dronpa2_video.ipynb) or follow the next paragraph to use the online implementation.
 
 ## Light intensity in the field of view
 ### Protocol
