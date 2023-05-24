@@ -2,17 +2,23 @@
 
 # Fluorescence to measure light intensity
 
+## Supplemenary data
 This repository contains supplementary files and codes to complete the manuscript XXX:
-- Simplified **online implementation of the code used to produce Figure 2** [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/Dronpa2_video.ipynb)
 - Simulations of the illumination used in Figure 2k,l [here](https://github.com/DreamRepo/light_calibration/tree/main/Macroscope)
 - Simulation of 3D illumination pattern and comparison with 2D imaging [here](https://github.com/DreamRepo/light_calibration/tree/main/LED%20Array)
 - Absorption and emission spectra of the actinometers [here](https://github.com/DreamRepo/light_calibration/tree/main/spectra_plotly)
 - Implementation of the fitting algorithm for the fluorescence induction of microalgae [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/PA_OJIP_rise_fit.ipynb)
 - Metadata for the video acquisitions used to produce the main text figures [here](https://github.com/DreamRepo/light_calibration/tree/main/imaging_metadata)
 
-The following section explains how to use the **online implementation**. 
-## Summary
+## Codes associated to experimental protocols: 
+- Application to process a fluorescence evolution curve [here](https://github.com/DreamRepo/light_calibration/tree/main/app)
+- Wavelength transfer using DDAO [here](https://github.com/DreamRepo/light_calibration/tree/main/DDAO)
+- [**Online implementation of the code used to produce Figure 2**](protocol) [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/Dronpa2_video.ipynb)
+
+## Light intensity in the field of view
+### Protocol
 The manuscript XXX(to complete) describes methods to calibrate the intensity of a light source using various actinometers, and describe how to implement the protocols.
+The following section explains how to use the provided **online implementation**. 
 
 
 <p align="center">
