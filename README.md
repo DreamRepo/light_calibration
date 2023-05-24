@@ -7,13 +7,13 @@ This repository contains supplementary files and codes to complete the manuscrip
 - Simulations of the illumination used in Figure 2k,l [here](https://github.com/DreamRepo/light_calibration/tree/main/Macroscope)
 - Simulation of 3D illumination pattern and comparison with 2D imaging [here](https://github.com/DreamRepo/light_calibration/tree/main/LED%20Array)
 - Absorption and emission spectra of the actinometers [here](https://github.com/DreamRepo/light_calibration/tree/main/spectra_plotly)
-- Implementation of the fitting algorithm for the fluorescence induction of microalgae [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/PA_OJIP_rise_fit.ipynb)
 - Metadata for the video acquisitions used to produce the main text figures [here](https://github.com/DreamRepo/light_calibration/tree/main/imaging_metadata)
 
 ## Codes associated to experimental protocols: 
 - Application to process a fluorescence evolution curve [here](https://github.com/DreamRepo/light_calibration/tree/main/app)
 - Wavelength transfer using DDAO [here](https://github.com/DreamRepo/light_calibration/tree/main/DDAO)
 - Light intensity in the field of view (Figure 2): jupyter notebook [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/Dronpa2_video.ipynb) or follow the next paragraph to use the online implementation.
+- Implementation of the fitting algorithm for the fluorescence induction of microalgae [here](https://github.com/DreamRepo/light_calibration/blob/main/notebooks/PA_OJIP_rise_fit.ipynb)
 
 ## Light intensity in the field of view
 ### Protocol
