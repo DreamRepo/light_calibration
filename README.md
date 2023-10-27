@@ -3,7 +3,7 @@
 # Fluorescence to measure light intensity
 
 ## Supplemenary data
-This repository contains supplementary files and codes to complete the manuscript XXX:
+This repository contains supplementary files and codes to complete the manuscript ["Fluorescence to Measure Light Intensity"](https://doi.org/10.1038/s41592-023-02063-y):
 - Simulations of the illumination used in Figure 2k,l [here](https://github.com/DreamRepo/light_calibration/tree/main/Macroscope)
 - Simulation of 3D illumination pattern and comparison with 2D imaging [here](https://github.com/DreamRepo/light_calibration/tree/main/LED%20Array)
 - Absorption and emission spectra of the actinometers [here](https://github.com/DreamRepo/light_calibration/tree/main/spectra_plotly)
@@ -17,7 +17,7 @@ This repository contains supplementary files and codes to complete the manuscrip
 
 ## Light intensity in the field of view
 ### Protocol
-The manuscript XXX(to complete) describes methods to calibrate the intensity of a light source using various actinometers, and describe how to implement the protocols.
+The manuscript ["Fluorescence to Measure Light Intensity"](https://doi.org/10.1038/s41592-023-02063-y) describes methods to calibrate the intensity of a light source using various actinometers, and describe how to implement the protocols.
 The following section explains how to use the provided **online implementation**. 
 
 
