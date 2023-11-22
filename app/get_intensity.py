@@ -49,17 +49,17 @@ def simple_tau(time_array, fluo, init):
 
 # Define the chemical options
 chemical_options = [
-    {'label': 'Dronpa 2', 'value': 'd2'},
-    {'label': 'Nitrone', 'value': 'Nit'},
+    {'label': 'Dronpa-2', 'value': 'd2'},
+    {'label': 'Nit', 'value': 'Nit'},
     {'label': 'DASA', 'value': 'DASA'},
-    {'label': 'Cinamate + Rhodamine', 'value': 'Cin'},
-    {'label': 'Photosynthetic apparatus', 'value': 'PA'}
+    {'label': 'Cin', 'value': 'Cin'},
+    #{'label': 'Photosynthetic apparatus', 'value': 'PA'}
 ]
 
 # Define a function to calculate the value based on the selected component
 def calculate_value(chemical, sigma, params):
     # Replace this with your own calculation logic based on the chemical and wavelength
-    return 1e6/(sigma*params[1])
+    return 1/(sigma*params[1])
 
 # Create the Dash app instance
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -152,7 +152,7 @@ values_out = dbc.Card(
                 style={'display': 'inline-block', 'font-size': '24px', 'vertical-align': 'middle'}),
 
         html.Div(id='output-container2', 
-                    children=[html.Div('Light intensity (µE/m²/s):', style={'font-weight': 'bold', 'margin-right': '10px'})]),
+                    children=[html.Div('Light intensity (E/m²/s):', style={'font-weight': 'bold', 'margin-right': '10px'})]),
 
     html.Div(id='intensity-value-eins', 
                 style={'display': 'inline-block', 'font-size': '24px', 'vertical-align': 'middle'},
@@ -257,10 +257,10 @@ def update_wavelength_dropdown_options(chemical):
                        {'label': '600', 'value': 885},
                        {'label': '632', 'value': 1135},
                        {'label': '650', 'value': 575}]
-    elif chemical == 'PA':
-        wavelengths = [{'label': '405', 'value': 2000000},
-                       {'label': '470', 'value': 2000000},
-                        {'label': '650', 'value': 1100000}]
+    #elif chemical == 'PA':
+    #    wavelengths = [{'label': '405', 'value': 2000000},
+    #                   {'label': '470', 'value': 2000000},
+    #                    {'label': '650', 'value': 1100000}]
     else:
         wavelengths = []
     return wavelengths
@@ -303,7 +303,7 @@ def update_output_value(params, chemical, sigma, options):
     else:
         wavelength = [option['label'] for option in options if option['value'] == sigma][0]
         value = calculate_value(chemical, sigma, params)
-        return '{:.1e}'.format(value/1000*120/int(wavelength))
+        return '{:.1e}'.format(value*1e6/1000*120/int(wavelength))
     
 @app.callback(
     Output('intensity-value-eins', 'children'),
@@ -316,7 +316,7 @@ def update_output_value(params, chemical, sigma):
         return ""
     else:
         value = calculate_value(chemical, sigma, params)
-        return '{:.1e}'.format(value/1e6)
+        return '{:.1e}'.format(value)
 
 """DATA STORAGE"""
 @app.callback(
@@ -328,7 +328,6 @@ def update_storage(contents, filename):
     if contents is not None:
         content_type, content_string = contents.split(',')
         decoded = base64.b64decode(content_string)
-        print(decoded)
         try:
             if 'csv' in filename:
                 # Assume that the user uploaded a CSV file
